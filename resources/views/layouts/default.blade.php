@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('title','Blog')</title>
-    <link rel="stylesheet" href="/css/app.css?123123">
+    <link rel="stylesheet" href="/css/app.css?111">
 </head>
 <body>
 @include('layouts._header')
