@@ -16,4 +16,20 @@ class UsersController extends Controller
     {
         return view('users.show', compact('user'));
     }
+
+    public function store(Request $request)
+    {
+        $this->validate($request,[
+            'name'=>'required|max:50',
+            'email'=>'required|email|max:255',
+            'password'=>'required|max:50|confirmed',
+        ]);
+        $user = User::create([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'password'=>bcrypt($request->password),
+        ]);
+        session()->flash('success','恭喜你，注册成功！');
+        return redirect()->route('users.show',[$user]);
+    }
 }
