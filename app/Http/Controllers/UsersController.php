@@ -18,6 +18,7 @@ class UsersController extends Controller
         return view('users.show', compact('user'));
     }
 
+    //注册
     public function store(Request $request)
     {
         $this->validate($request,[
