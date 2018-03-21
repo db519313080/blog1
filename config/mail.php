@@ -55,10 +55,7 @@ return [
     |
     */
 
-    'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
-    ],
+    'from' => ['address' => 'sales@tripinsight.cn', 'name' => '途说网络科技有限公司'],
 
     /*
     |--------------------------------------------------------------------------
