@@ -14,6 +14,10 @@ class UsersController extends Controller
         $this->middleware('auth', [
             'except' => ['show', 'create', 'store']
         ]);
+
+        $this->middleware('guest',[
+            'only'=>['create'],
+        ]);
     }
 
     public function create()
@@ -49,6 +53,7 @@ class UsersController extends Controller
     //编辑view
     public function edit(User $user)
     {
+        $this->authorize('update',$user);
         return view('users.edit',compact('user'));
     }
 
@@ -64,9 +69,17 @@ class UsersController extends Controller
         if ($request->password) {
             $data['password'] = bcrypt($request->password);
         }
+        $this->authorize('update',$user);
         $user->update($data);
 
         session()->flash('success','恭喜你，修改成功！');
         return redirect()->route('users.show',[$user]);
+    }
+
+    //用户列表view
+    public function index()
+    {
+        $users = User::all();
+        return view('users.index', compact('users'));
     }
 }
