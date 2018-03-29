@@ -15,7 +15,6 @@ class Comt
      */
     public function handle($request, Closure $next)
     {
-        dd('comt');
         return $next($request);
     }
 }

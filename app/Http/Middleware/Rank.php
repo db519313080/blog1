@@ -15,7 +15,6 @@ class Rank
      */
     public function handle($request, Closure $next)
     {
-        dd('rank');
         return $next($request);
     }
 }
