@@ -16,16 +16,26 @@ class IndexController extends Controller
      */
     public function __construct(Request $request)
     {
-        if(strpos($request->getUri(),'path=comt') !== false)
-        {
+        if (strpos($request->getUri(), 'path=comt') !== false) {
             $this->middleware('comt');
-        } elseif (strpos($request->getUri(),'path=rank') !== false) {
+        } elseif (strpos($request->getUri(), 'path=rank') !== false) {
             $this->middleware('rank');
         }
     }
 
     public function vueIndex()
     {
-        echo 123;
+        $cmp = function ($str1, $str2) {
+
+            return strcmp($str2->id,$str1->id);
+                //return $str1->id > $str2->id ? -1 : 1;
+        };
+        $arr = [
+            (object)['id'=>1,'name'=>'a'],
+            (object)['id'=>2,'name'=>'b'],
+            (object)['id'=>3,'name'=>'c'],
+        ];
+        usort($arr, $cmp);
+        dd($arr);
     }
 }
