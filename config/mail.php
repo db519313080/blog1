@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'sales@tripinsight.cn', 'name' => '途说网络科技有限公司'],
+    'from' => ['address' => env('MAIL_FROM_ADDRESS'), 'name' => env('MAIL_FROM_NAME')],
 
     /*
     |--------------------------------------------------------------------------

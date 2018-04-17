@@ -13,7 +13,7 @@ class UsersController extends Controller
     public function __construct()
     {
         $this->middleware('auth', [
-            'except' => ['show', 'create', 'store','confirmEmail']
+            'except' => ['show', 'create', 'store','index','confirmEmail']
         ]);
 
         $this->middleware('guest',[
@@ -60,7 +60,7 @@ class UsersController extends Controller
         $subject = "感谢注册 Sample 应用！请确认你的邮箱。";
 
         Mail::send($view, $data, function ($message) use ($from, $name, $to, $subject) {
-            $message->from($from, $name)->to($to)->subject($subject);
+            $message->to($to)->subject($subject);
         });
     }
 
