@@ -25,6 +25,7 @@ class IndexController extends Controller
 
     public function vueIndex()
     {
+        dd('');
         $cmp = function ($str1, $str2) {
 
             return strcmp($str2->id,$str1->id);
