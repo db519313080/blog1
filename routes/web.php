@@ -33,6 +33,17 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('passw
 //微博
 Route::resource('statuses', 'StatusesController', ['only' => ['store', 'destroy']]);
 
+//『关注的人』列表页面和『粉丝』列表页面
+Route::get('/users/{user}/followings', 'UsersController@followings')->name('users.followings');
+Route::get('/users/{user}/followers', 'UsersController@followers')->name('users.followers');
+
+
+
+
+
+
+
+
 
 //Test
 Route::any('test', 'Test\IndexController@vueIndex');
