@@ -25,7 +25,7 @@ class IndexController extends Controller
 
     public function vueIndex()
     {
-        dd('');
+        dd(base64_encode('token=aserwserfsf&id=123&name=aaa&phone=18610309188'));
         $cmp = function ($str1, $str2) {
 
             return strcmp($str2->id,$str1->id);
