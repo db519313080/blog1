@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Test;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Mmanos\Search\Search;
 
 class IndexController extends Controller
 {
@@ -25,7 +26,13 @@ class IndexController extends Controller
 
     public function vueIndex()
     {
-        dd(base64_encode('token=aserwserfsf&id=123&name=aaa&phone=18610309188'));
+        Search::insert(1, array(
+            'title' => 'My title',
+            'content' => 'The quick brown fox...',
+            'status' => 'published',
+        ));die;
+        $results = Search::search('content', 'fox')->get();
+        dd($results);
         $cmp = function ($str1, $str2) {
 
             return strcmp($str2->id,$str1->id);

@@ -298,6 +298,10 @@ class ComposerStaticInit0fa2b31f635df13b27f4f1e6aecd914d
             array (
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
             ),
+            'Mmanos\\Search\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/mmanos/laravel-search/src',
+            ),
         ),
         'J' => 
         array (
@@ -327,6 +331,7 @@ class ComposerStaticInit0fa2b31f635df13b27f4f1e6aecd914d
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\FollowersController' => __DIR__ . '/../..' . '/app/Http/Controllers/FollowersController.php',
         'App\\Http\\Controllers\\SessionsController' => __DIR__ . '/../..' . '/app/Http/Controllers/SessionsController.php',
         'App\\Http\\Controllers\\StaticPagesController' => __DIR__ . '/../..' . '/app/Http/Controllers/StaticPagesController.php',
         'App\\Http\\Controllers\\StatusesController' => __DIR__ . '/../..' . '/app/Http/Controllers/StatusesController.php',
@@ -340,6 +345,7 @@ class ComposerStaticInit0fa2b31f635df13b27f4f1e6aecd914d
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Listeners\\QueryListener' => __DIR__ . '/../..' . '/app/Listeners/QueryListener.php',
         'App\\Models\\Status' => __DIR__ . '/../..' . '/app/Models/Status.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Notifications\\InvoicePaid' => __DIR__ . '/../..' . '/app/Notifications/InvoicePaid.php',
@@ -1800,6 +1806,14 @@ class ComposerStaticInit0fa2b31f635df13b27f4f1e6aecd914d
         'League\\Flysystem\\Util\\ContentListingFormatter' => __DIR__ . '/..' . '/league/flysystem/src/Util/ContentListingFormatter.php',
         'League\\Flysystem\\Util\\MimeType' => __DIR__ . '/..' . '/league/flysystem/src/Util/MimeType.php',
         'League\\Flysystem\\Util\\StreamHasher' => __DIR__ . '/..' . '/league/flysystem/src/Util/StreamHasher.php',
+        'Mmanos\\Search\\Facade' => __DIR__ . '/..' . '/mmanos/laravel-search/src/Mmanos/Search/Facade.php',
+        'Mmanos\\Search\\Index' => __DIR__ . '/..' . '/mmanos/laravel-search/src/Mmanos/Search/Index.php',
+        'Mmanos\\Search\\Index\\Algolia' => __DIR__ . '/..' . '/mmanos/laravel-search/src/Mmanos/Search/Index/Algolia.php',
+        'Mmanos\\Search\\Index\\Elasticsearch' => __DIR__ . '/..' . '/mmanos/laravel-search/src/Mmanos/Search/Index/Elasticsearch.php',
+        'Mmanos\\Search\\Index\\Zend' => __DIR__ . '/..' . '/mmanos/laravel-search/src/Mmanos/Search/Index/Zend.php',
+        'Mmanos\\Search\\Query' => __DIR__ . '/..' . '/mmanos/laravel-search/src/Mmanos/Search/Query.php',
+        'Mmanos\\Search\\Search' => __DIR__ . '/..' . '/mmanos/laravel-search/src/Mmanos/Search/Search.php',
+        'Mmanos\\Search\\SearchServiceProvider' => __DIR__ . '/..' . '/mmanos/laravel-search/src/Mmanos/Search/SearchServiceProvider.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
         'Mockery\\Adapter\\Phpunit\\MockeryTestCase' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryTestCase.php',

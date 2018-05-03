@@ -4177,5 +4177,64 @@
             "laravel",
             "overtrue"
         ]
+    },
+    {
+        "name": "mmanos/laravel-search",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mmanos/laravel-search.git",
+            "reference": "0a6e8a80f3b93fd82aa619ec58c978e40ed9ff10"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/mmanos/laravel-search/0a6e8a80f3b93fd82aa619ec58c978e40ed9ff10.zip",
+            "reference": "0a6e8a80f3b93fd82aa619ec58c978e40ed9ff10",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "~5.0",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "algolia/algoliasearch-client-php": "1.1.*",
+            "elasticsearch/elasticsearch": "1.0.*@dev",
+            "zendframework/zendsearch": "dev-master"
+        },
+        "suggest": {
+            "algolia/algoliasearch-client-php": "Required for Algolia driver.",
+            "elasticsearch/elasticsearch": "Required for ElasticSearch driver.",
+            "zendframework/zendsearch": "Required for ZendSearch driver."
+        },
+        "time": "2017-06-29T20:11:47+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Mmanos\\Search\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mark Manos",
+                "email": "mark@airpac.com"
+            }
+        ],
+        "description": "A search package for Laravel 5.",
+        "keywords": [
+            "algolia",
+            "elasticsearch",
+            "full",
+            "laravel",
+            "lucene",
+            "search",
+            "text",
+            "zendsearch"
+        ]
     }
 ]
