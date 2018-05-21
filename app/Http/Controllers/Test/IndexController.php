@@ -4,7 +4,8 @@ namespace App\Http\Controllers\Test;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Mmanos\Search\Search;
+use App\Models\Status;
+use sngrl\SphinxSearch\SphinxSearch;
 
 class IndexController extends Controller
 {
@@ -26,24 +27,14 @@ class IndexController extends Controller
 
     public function vueIndex()
     {
-        Search::insert(1, array(
-            'title' => 'My title',
-            'content' => 'The quick brown fox...',
-            'status' => 'published',
-        ));die;
-        $results = Search::search('content', 'fox')->get();
+        //别忘记引入SphinxSearch()类
+        $sphinx = new SphinxSearch();
+        //search()第一个参数是查询的关键字，第二个参数是配置文件中添加的索引名（my_index_name）
+        //$results = $sphinx->search('my Swift', 'test1')->query();//返回值为原生sphinx的结果
+        $results = $sphinx->search('Omnis', 'test1')->get();//返回值为封装的后结果数组
         dd($results);
-        $cmp = function ($str1, $str2) {
-
-            return strcmp($str2->id,$str1->id);
-                //return $str1->id > $str2->id ? -1 : 1;
-        };
-        $arr = [
-            (object)['id'=>1,'name'=>'a'],
-            (object)['id'=>2,'name'=>'b'],
-            (object)['id'=>3,'name'=>'c'],
-        ];
-        usort($arr, $cmp);
-        dd($arr);
+        //在某个字段中搜索关键字（返回原生的sphinx结果数组）,并添加分页限制
+       // $sphinx->limit($limit,($page - 1) * $limit);
+       // $result=$sphinx->search('@title "my query"','index_name')->query();
     }
 }

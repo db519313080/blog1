@@ -6,12 +6,13 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
+        "fadion/bouncy": "dev-l5",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
         "mmanos/laravel-search": "dev-master",
         "overtrue/laravel-lang": "~3.0",
-        "fadion/bouncy": "dev-l5"
+        "sngrl/sphinxsearch": "dev-master"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

@@ -3305,6 +3305,7 @@ return array(
     'SebastianBergmann\\ResourceOperations\\ResourceOperations' => $vendorDir . '/sebastian/resource-operations/src/ResourceOperations.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
     'SessionUpdateTimestampHandlerInterface' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
+    'Sphinx\\SphinxClient' => $vendorDir . '/gigablah/sphinxphp/src/Sphinx/SphinxClient.php',
     'StatusesTableSeeder' => $baseDir . '/database/seeds/StatusesTableSeeder.php',
     'Symfony\\Component\\Console\\Application' => $vendorDir . '/symfony/console/Application.php',
     'Symfony\\Component\\Console\\CommandLoader\\CommandLoaderInterface' => $vendorDir . '/symfony/console/CommandLoader/CommandLoaderInterface.php',
@@ -3973,4 +3974,6 @@ return array(
     'phpDocumentor\\Reflection\\Types\\String_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/String_.php',
     'phpDocumentor\\Reflection\\Types\\This' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/This.php',
     'phpDocumentor\\Reflection\\Types\\Void_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Void_.php',
+    'sngrl\\SphinxSearch\\SphinxSearch' => $vendorDir . '/sngrl/sphinxsearch/src/sngrl/SphinxSearch/SphinxSearch.php',
+    'sngrl\\SphinxSearch\\SphinxSearchServiceProvider' => $vendorDir . '/sngrl/sphinxsearch/src/sngrl/SphinxSearch/SphinxSearchServiceProvider.php',
 );

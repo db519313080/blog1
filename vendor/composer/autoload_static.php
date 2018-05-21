@@ -285,6 +285,20 @@ class ComposerStaticInit0fa2b31f635df13b27f4f1e6aecd914d
     );
 
     public static $prefixesPsr0 = array (
+        's' => 
+        array (
+            'sngrl\\SphinxSearch' => 
+            array (
+                0 => __DIR__ . '/..' . '/sngrl/sphinxsearch/src',
+            ),
+        ),
+        'S' => 
+        array (
+            'Sphinx' => 
+            array (
+                0 => __DIR__ . '/..' . '/gigablah/sphinxphp/src',
+            ),
+        ),
         'P' => 
         array (
             'Prophecy\\' => 
@@ -3649,6 +3663,7 @@ class ComposerStaticInit0fa2b31f635df13b27f4f1e6aecd914d
         'SebastianBergmann\\ResourceOperations\\ResourceOperations' => __DIR__ . '/..' . '/sebastian/resource-operations/src/ResourceOperations.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'SessionUpdateTimestampHandlerInterface' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
+        'Sphinx\\SphinxClient' => __DIR__ . '/..' . '/gigablah/sphinxphp/src/Sphinx/SphinxClient.php',
         'StatusesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/StatusesTableSeeder.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\CommandLoader\\CommandLoaderInterface' => __DIR__ . '/..' . '/symfony/console/CommandLoader/CommandLoaderInterface.php',
@@ -4317,6 +4332,8 @@ class ComposerStaticInit0fa2b31f635df13b27f4f1e6aecd914d
         'phpDocumentor\\Reflection\\Types\\String_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/String_.php',
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
+        'sngrl\\SphinxSearch\\SphinxSearch' => __DIR__ . '/..' . '/sngrl/sphinxsearch/src/sngrl/SphinxSearch/SphinxSearch.php',
+        'sngrl\\SphinxSearch\\SphinxSearchServiceProvider' => __DIR__ . '/..' . '/sngrl/sphinxsearch/src/sngrl/SphinxSearch/SphinxSearchServiceProvider.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

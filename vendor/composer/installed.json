@@ -4482,5 +4482,105 @@
             "eloquent",
             "laravel"
         ]
+    },
+    {
+        "name": "gigablah/sphinxphp",
+        "version": "2.0.8",
+        "version_normalized": "2.0.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/gigablah/sphinxphp.git",
+            "reference": "6d5e97fdd33c1129ca372203d1330827c1cbc46c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/gigablah/sphinxphp/6d5e97fdd33c1129ca372203d1330827c1cbc46c.zip",
+            "reference": "6d5e97fdd33c1129ca372203d1330827c1cbc46c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "3.7.*",
+            "satooshi/php-coveralls": "dev-master"
+        },
+        "time": "2013-08-22T08:05:44+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Sphinx": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Andrew Aksyonoff",
+                "homepage": "http://sphinxsearch.com/"
+            }
+        ],
+        "description": "Sphinx Search PHP API",
+        "homepage": "http://sphinxsearch.com/",
+        "keywords": [
+            "api",
+            "search",
+            "sphinx"
+        ]
+    },
+    {
+        "name": "sngrl/sphinxsearch",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sngrl/sphinxsearch.git",
+            "reference": "dc50f1b629d3e7e686afb1c9cf32b5c9b27f590c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/sngrl/sphinxsearch/dc50f1b629d3e7e686afb1c9cf32b5c9b27f590c.zip",
+            "reference": "dc50f1b629d3e7e686afb1c9cf32b5c9b27f590c",
+            "shasum": ""
+        },
+        "require": {
+            "gigablah/sphinxphp": "2.0.8",
+            "illuminate/support": "~5.0",
+            "php": ">=5.3.0"
+        },
+        "time": "2017-11-03T07:09:56+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "sngrl\\SphinxSearch": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "sngrl",
+                "email": "reserved@mail.ru"
+            }
+        ],
+        "description": "Laravel package to query Sphinxsearch in Laravel 5",
+        "homepage": "http://github.com/sngrl/sphinxsearch",
+        "keywords": [
+            "laravel",
+            "laravel 5",
+            "sphinx",
+            "sphinxsearch"
+        ]
     }
 ]

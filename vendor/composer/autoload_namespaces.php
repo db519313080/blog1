@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'sngrl\\SphinxSearch' => array($vendorDir . '/sngrl/sphinxsearch/src'),
+    'Sphinx' => array($vendorDir . '/gigablah/sphinxphp/src'),
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),
     'Parsedown' => array($vendorDir . '/erusev/parsedown'),

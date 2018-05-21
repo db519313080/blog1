@@ -177,6 +177,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         //Mmanos\Search\SearchServiceProvider::class,
+        Fadion\Bouncy\BouncyServiceProvider::class,
+        'sngrl\SphinxSearch\SphinxSearchServiceProvider',
 
     ],
 
