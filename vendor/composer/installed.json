@@ -4582,5 +4582,283 @@
             "sphinx",
             "sphinxsearch"
         ]
+    },
+    {
+        "name": "zendframework/zend-stdlib",
+        "version": "3.2.0",
+        "version_normalized": "3.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-stdlib.git",
+            "reference": "cd164b4a18b5d1aeb69be2c26db035b5ed6925ae"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/zendframework/zend-stdlib/cd164b4a18b5d1aeb69be2c26db035b5ed6925ae.zip",
+            "reference": "cd164b4a18b5d1aeb69be2c26db035b5ed6925ae",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0"
+        },
+        "require-dev": {
+            "phpbench/phpbench": "^0.13",
+            "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+            "zendframework/zend-coding-standard": "~1.0.0"
+        },
+        "time": "2018-04-30T13:50:40+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.2.x-dev",
+                "dev-develop": "3.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Stdlib\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "SPL extensions, array utilities, error handlers, and more",
+        "keywords": [
+            "ZendFramework",
+            "stdlib",
+            "zf"
+        ]
+    },
+    {
+        "name": "container-interop/container-interop",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/container-interop/container-interop.git",
+            "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/container-interop/container-interop/79cbf1341c22ec75643d841642dd5d6acd83bdb8.zip",
+            "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+            "shasum": ""
+        },
+        "require": {
+            "psr/container": "^1.0"
+        },
+        "time": "2017-02-14T19:40:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Interop\\Container\\": "src/Interop/Container/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+        "homepage": "https://github.com/container-interop/container-interop"
+    },
+    {
+        "name": "zendframework/zend-servicemanager",
+        "version": "3.3.2",
+        "version_normalized": "3.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-servicemanager.git",
+            "reference": "9f35a104b8d4d3b32da5f4a3b6efc0dd62e5af42"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/zendframework/zend-servicemanager/9f35a104b8d4d3b32da5f4a3b6efc0dd62e5af42.zip",
+            "reference": "9f35a104b8d4d3b32da5f4a3b6efc0dd62e5af42",
+            "shasum": ""
+        },
+        "require": {
+            "container-interop/container-interop": "^1.2",
+            "php": "^5.6 || ^7.0",
+            "psr/container": "^1.0",
+            "zendframework/zend-stdlib": "^3.1"
+        },
+        "provide": {
+            "container-interop/container-interop-implementation": "^1.2",
+            "psr/container-implementation": "^1.0"
+        },
+        "require-dev": {
+            "mikey179/vfsstream": "^1.6.5",
+            "ocramius/proxy-manager": "^1.0 || ^2.0",
+            "phpbench/phpbench": "^0.13.0",
+            "phpunit/phpunit": "^5.7.25 || ^6.4.4",
+            "zendframework/zend-coding-standard": "~1.0.0"
+        },
+        "suggest": {
+            "ocramius/proxy-manager": "ProxyManager 1.* to handle lazy initialization of services",
+            "zendframework/zend-stdlib": "zend-stdlib ^2.5 if you wish to use the MergeReplaceKey or MergeRemoveKey features in Config instances"
+        },
+        "time": "2018-01-29T16:48:37+00:00",
+        "bin": [
+            "bin/generate-deps-for-config-factory",
+            "bin/generate-factory-for-class"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.3-dev",
+                "dev-develop": "4.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\ServiceManager\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Factory-Driven Dependency Injection Container",
+        "keywords": [
+            "PSR-11",
+            "ZendFramework",
+            "dependency-injection",
+            "di",
+            "dic",
+            "service-manager",
+            "servicemanager",
+            "zf"
+        ]
+    },
+    {
+        "name": "zendframework/zend-db",
+        "version": "2.9.3",
+        "version_normalized": "2.9.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-db.git",
+            "reference": "5b4f2c42f94c9f7f4b2f456a0ebe459fab12b3d9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/zendframework/zend-db/5b4f2c42f94c9f7f4b2f456a0ebe459fab12b3d9.zip",
+            "reference": "5b4f2c42f94c9f7f4b2f456a0ebe459fab12b3d9",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.6 || ^7.0",
+            "zendframework/zend-stdlib": "^2.7 || ^3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5.7.25 || ^6.4.4",
+            "zendframework/zend-coding-standard": "~1.0.0",
+            "zendframework/zend-eventmanager": "^2.6.2 || ^3.0",
+            "zendframework/zend-hydrator": "^1.1 || ^2.1",
+            "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3"
+        },
+        "suggest": {
+            "zendframework/zend-eventmanager": "Zend\\EventManager component",
+            "zendframework/zend-hydrator": "Zend\\Hydrator component for using HydratingResultSets",
+            "zendframework/zend-servicemanager": "Zend\\ServiceManager component"
+        },
+        "time": "2018-04-09T13:21:36+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.9-dev",
+                "dev-develop": "2.10-dev"
+            },
+            "zf": {
+                "component": "Zend\\Db",
+                "config-provider": "Zend\\Db\\ConfigProvider"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Db\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Database abstraction layer, SQL abstraction, result set abstraction, and RowDataGateway and TableDataGateway implementations",
+        "keywords": [
+            "ZendFramework",
+            "db",
+            "zf"
+        ]
+    },
+    {
+        "name": "ripaclub/sphinxsearch",
+        "version": "0.8.1",
+        "version_normalized": "0.8.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ripaclub/sphinxsearch.git",
+            "reference": "22db68830f39084b2ed9526de483126e5955f5cf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/ripaclub/sphinxsearch/22db68830f39084b2ed9526de483126e5955f5cf.zip",
+            "reference": "22db68830f39084b2ed9526de483126e5955f5cf",
+            "shasum": ""
+        },
+        "require": {
+            "container-interop/container-interop": "~1.0",
+            "php": "^5.5 || ^7.0",
+            "zendframework/zend-db": "^2.4 || ^3.0",
+            "zendframework/zend-servicemanager": "^2.4 || ^3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.3",
+            "satooshi/php-coveralls": "dev-master"
+        },
+        "suggest": {
+            "ripaclub/zf2-sphinxsearch": "ZF2 integration module for SphinxSearch library",
+            "ripaclub/zf2-sphinxsearch-tool": "Utility that provides a set of tools to create and handle Sphinx Search configs and sources"
+        },
+        "time": "2016-03-26T03:10:04+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "SphinxSearch\\": "library",
+                "SphinxSearchTest\\": "tests"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-2-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Leonardo Grasso",
+                "email": "me@leonardograsso.com",
+                "homepage": "http://github.com/leogr"
+            },
+            {
+                "name": "Leo Di Donato",
+                "email": "leodidonato@gmail.com",
+                "homepage": "http://github.com/leodido"
+            }
+        ],
+        "description": "Sphinx Search library provides SphinxQL indexing and searching features",
+        "homepage": "https://github.com/ripaclub/sphinxsearch",
+        "keywords": [
+            "indexing",
+            "pdo",
+            "query builder",
+            "search",
+            "search engine",
+            "sphinx",
+            "sphinxql",
+            "zf2"
+        ]
     }
 ]

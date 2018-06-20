@@ -12,6 +12,7 @@
         "laravel/tinker": "~1.0",
         "mmanos/laravel-search": "dev-master",
         "overtrue/laravel-lang": "~3.0",
+        "ripaclub/sphinxsearch": "^0.8.1",
         "sngrl/sphinxsearch": "dev-master"
     },
     "require-dev": {

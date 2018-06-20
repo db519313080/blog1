@@ -31,7 +31,9 @@ class IndexController extends Controller
         $sphinx = new SphinxSearch();
         //search()第一个参数是查询的关键字，第二个参数是配置文件中添加的索引名（my_index_name）
         //$results = $sphinx->search('my Swift', 'test1')->query();//返回值为原生sphinx的结果
-        $results = $sphinx->search('Omnis', 'test1')->get();//返回值为封装的后结果数组
+        $results = $sphinx->search('营口星7', 'test1')
+            ->setMatchMode(\Sphinx\SphinxClient::SPH_MATCH_EXTENDED)
+            ->get();//返回值为封装的后结果数组
         dd($results);
         //在某个字段中搜索关键字（返回原生的sphinx结果数组）,并添加分页限制
        // $sphinx->limit($limit,($page - 1) * $limit);
